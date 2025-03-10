@@ -1,3 +1,8 @@
+function enviarFalso(event){
+    event.preventDefault();
+    alert("¡Tu consulta ha sido enviada con éxito! Pronto recibirás información en tu correo.");
+    document.querySelector("form").reset();
+}
 function irASeccion(id) {
     document.querySelectorAll('.seccion-oculta').forEach(seccion => {
         seccion.style.display = 'none';

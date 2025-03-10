@@ -4419,7 +4419,9 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
-
+button:hover {
+  background: #0056b3;
+}
 .accordion-header {
   margin-bottom: 0;
 }
@@ -10979,4 +10981,12 @@ section.resume-section .resume-section-content {
 }
 .alinear-derecha {
   text-align: right;
+}
+form {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
