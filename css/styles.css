@@ -5975,7 +5975,6 @@ textarea.form-control-lg {
 .carousel-indicators .active {
   opacity: 1;
 }
-
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -10977,4 +10976,7 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+.alinear-derecha {
+  text-align: right;
 }
