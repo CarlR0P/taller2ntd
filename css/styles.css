@@ -417,6 +417,18 @@ fieldset {
   margin: 0;
   border: 0;
 }
+.conclusion {
+  text-align: center; /* Centrar el texto */
+  font-size: 18px; /* Tamaño de letra */
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color de texto oscuro */
+  background-color: #f8f8f8; /* Fondo suave */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  max-width: 80%; /* Ancho máximo */
+  margin: 20px auto; /* Centrado horizontal */
+}
 
 legend {
   float: left;
