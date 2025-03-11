@@ -462,11 +462,11 @@ select:disabled {
 }
 
 .descripcion-secciones button {
-  margin-top: auto; /* Empuja el botón hasta la parte inferior */
-    align-self: center; /* Centra horizontalmente */
+  margin-top: auto; 
+    align-self: center; 
     padding: 10px 20px;
     border: none;
-    background-color: #ff6600; /* Color del botón */
+    background-color: #bd5d38; 
     color: white;
     border-radius: 5px;
     cursor: pointer;
