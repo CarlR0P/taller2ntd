@@ -94,11 +94,24 @@
 
 .seccion-oculta {
   display: none;
-  margin-top: 20px;
+  background: #fff;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.seccion-oculta ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seccion-oculta li {
+  background: #bd5d38;
+  color: white;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
 }
 
 body {
@@ -389,7 +402,14 @@ label {
 }
 
 button {
-  border-radius: 0;
+  background: #bd5d38; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 button:focus:not(:focus-visible) {
@@ -427,7 +447,31 @@ select:disabled {
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
+.descripcion-secciones {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 250px; 
+}
 
+.descripcion-secciones button {
+  margin-top: auto; /* Empuja el botón hasta la parte inferior */
+    align-self: center; /* Centra horizontalmente */
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6600; /* Color del botón */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
 button,
 [type=button],
 [type=reset],
