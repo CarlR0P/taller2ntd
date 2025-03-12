@@ -101,6 +101,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
+
 .seccion-oculta ul {
   list-style: none;
   padding: 0;
@@ -402,7 +403,7 @@ label {
 }
 
 button {
-  background: #bd5d38; 
+  background: #bd5d38;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -447,31 +448,33 @@ select:disabled {
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
+
 .descripcion-secciones {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 30%;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
-    min-height: 250px; 
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
 }
 
 .descripcion-secciones button {
-  margin-top: auto; 
-    align-self: center; 
-    padding: 10px 20px;
-    border: none;
-    background-color: #bd5d38; 
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    
+  margin-top: auto;
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  background-color: #bd5d38;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
 }
+
 button,
 [type=button],
 [type=reset],
@@ -12851,6 +12854,7 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
 .alinear-derecha {
   text-align: right;
 }
@@ -12908,8 +12912,8 @@ section.resume-section .resume-section-content {
 
 .fondo::before {
   content: "";
-  background: 
-    url("pexels-museo.jpg") no-repeat right center/50% 100%, 
+  background:
+    url("pexels-museo.jpg") no-repeat right center/50% 100%,
     url("pexels-alieninvaders.jpg") no-repeat left center/50% 100%;
   position: absolute;
   top: 0;
@@ -12918,4 +12922,14 @@ section.resume-section .resume-section-content {
   height: 100%;
   opacity: 0.4;
   z-index: -1;
+}
+
+.texto-desplegable {
+  display: none;
+}
+.texto-desplegable.activo {
+  display: block;
+}
+.titulo-quienesomos:hover{
+  color: #bd5d38;
 }

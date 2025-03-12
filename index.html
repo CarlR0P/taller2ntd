@@ -36,7 +36,8 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#acercade">¿Quienes somos?</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reservas">Reservas</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#conclusion">Conclusiones</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#integrantes">Equipo de Trabajo</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#integrantes">Equipo de Trabajo</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -50,9 +51,17 @@
                     <span class="text-primary">Flash</span>
                 </h1>
                 <div class="subheading mb-5">
-                    <p style="color: black;">Un museo es una institución dedicada a la preservación, exhibición e interpretación de objetos de valor histórico, cultural o científico. Su propósito es educar, inspirar y conectar a las personas con el conocimiento y la historia a través de colecciones organizadas.
+                    <p style="color: black;">Un museo es una institución dedicada a la preservación, exhibición e
+                        interpretación de objetos de valor histórico, cultural o científico. Su propósito es educar,
+                        inspirar y conectar a las personas con el conocimiento y la historia a través de colecciones
+                        organizadas.
 
-                        Un museo de videojuegos adapta este concepto al mundo del gaming, convirtiéndose en un espacio donde se documenta y celebra la evolución de los videojuegos como una expresión artística, tecnológica y cultural. A través de consolas, juegos, hardware, arte conceptual y experiencias interactivas, permite a los visitantes explorar cómo los videojuegos han influido en la sociedad, la creatividad y la industria del entretenimiento. <span style="font-style: italic;">Generado Con ChatGPT</span></p>
+                        Un museo de videojuegos adapta este concepto al mundo del gaming, convirtiéndose en un espacio
+                        donde se documenta y celebra la evolución de los videojuegos como una expresión artística,
+                        tecnológica y cultural. A través de consolas, juegos, hardware, arte conceptual y experiencias
+                        interactivas, permite a los visitantes explorar cómo los videojuegos han influido en la
+                        sociedad, la creatividad y la industria del entretenimiento. <span
+                            style="font-style: italic;">Generado Con ChatGPT</span></p>
                 </div>
 
                 <div class="social-icons">
@@ -152,71 +161,90 @@
         <section class="resume-section" id="acercade">
             <div class="resume-section-content">
                 <h2 class="mb-5">¿Quienes Somos?</h2>
+                <h4 style="font-style: italic;">Haga click en cada item</h4>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Acerca de nosotros <br></h3>
-                        <div>Somos un museo dedicado a la historia y evolución de los videojuegos. Nuestro espacio reúne
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt1')">Acerca de nosotros <br></h3>
+                        <div class="texto-desplegable" id="txt1">
+                            Somos un museo dedicado a la historia y evolución de los videojuegos. Nuestro espacio
+                            reúne
                             consolas, juegos y tecnología icónica que han marcado generaciones, ofreciendo a los
-                            visitantes una experiencia interactiva y educativa sobre la industria del gaming. <br></div>
+                            visitantes una experiencia interactiva y educativa sobre la industria del gaming.
+                            <br>
+                        </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between alinear-derecha">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><br>Nuestra Misión <br></h3>
-                        <p>Preservar, exhibir y difundir la historia de los videojuegos, brindando una experiencia
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt2')"><br>Nuestra Misión <br></h3>
+                        <div class="texto-desplegable" id="txt2">
+                            Preservar, exhibir y difundir la historia de los videojuegos, brindando una experiencia
                             inmersiva que conecte a jugadores de todas las edades con el legado y la evolución de esta
-                            forma de arte y entretenimiento.</p>
+                            forma de arte y entretenimiento. 
+                            <br>
+                        </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><br>Nuestra Visión<br></h3>
-                        <p>Ser un referente en la conservación y divulgación del patrimonio cultural de los videojuegos,
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt3')"><br>Nuestra Visión<br></h3>
+                        <div class="texto-desplegable" id="txt3">
+                            Ser un referente en la conservación y divulgación del patrimonio cultural de los videojuegos,
                             inspirando a nuevas generaciones a explorar su impacto en la sociedad, la tecnología y el
-                            arte.</p>
+                            arte.
+                            <br>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between alinear-derecha">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><br>Impacto a la Comunidad<br></h3>
-                        <p>Nuestro museo no solo preserva la historia de los videojuegos, sino que también fomenta la
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt4')"><br>Impacto a la Comunidad<br></h3>
+                        <div class="texto-desplegable" id="txt4">
+                            Nuestro museo no solo preserva la historia de los videojuegos, sino que también fomenta la
                             educación, la creatividad y la innovación. A través de exposiciones interactivas, talleres y
                             eventos, acercamos a la comunidad el impacto cultural, tecnológico y artístico de los
-                            videojuegos, inspirando a futuras generaciones de desarrolladores y jugadores.</p>
+                            videojuegos, inspirando a futuras generaciones de desarrolladores y jugadores.
+                            <br>
+                        </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><br>¿Dónde estamos?<br></h3>
-                        <a href="https://maps.app.goo.gl/xt9knxpxQDxEufCY9">Ni nosotros sambemos</a>
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt5')"><br>¿Dónde estamos?<br></h3>
+                        <div class="texto-desplegable" id="txt5">
+                            <a href="https://maps.app.goo.gl/xt9knxpxQDxEufCY9">Ni nosotros sambemos</a>
+                        </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0 alinear-derecha"><br>Reciba más información<br></h3>
-                        <form class="formulario-contacto" onsubmit="enviarFalso(event)">
-                            <label for="nombre">Nombre completo:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="telefono">Celular:</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-
-                            <label for="asunto">¿Qué información le resulta relevante?</label>
-                            <select id="asunto" name="asunto">
-                                <option value="eventos">Eventos</option>
-                                <option value="exhibiciones">Exhibiciones</option>
-                                <option value="membresia">Membresía</option>
-                                <option value="otro">Otro</option>
-                            </select>
-
-                            <label for="consentimiento">Acepto recibir información del museo.</label>
-                            <input type="checkbox" id="consentimiento" required>
-
-                            <button type="submit">Enviar</button>
-                        </form>
+                        <h3 class="mb-0 titulo-quienesomos" style="text-align: center;" onclick="toggleTexto('txt6')"><br>Reciba más información<br></h3>
+                        <div class="texto-desplegable" id="txt6">
+                            <form class="formulario-contacto" onsubmit="enviarFalso(event)">
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+    
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+    
+                                <label for="telefono">Celular:</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+    
+                                <label for="asunto">¿Qué información le resulta relevante?</label>
+                                <select id="asunto" name="asunto">
+                                    <option value="eventos">Eventos</option>
+                                    <option value="exhibiciones">Exhibiciones</option>
+                                    <option value="membresia">Membresía</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+    
+                                <label for="consentimiento">Acepto recibir información del museo.</label>
+                                <input type="checkbox" id="consentimiento" required>
+    
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,7 +255,7 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Reservas</h2>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
-            
+
                 <div class="subheading mb-3">Workflow</div>
                 <ul class="fa-ul mb-0">
                     <li>
@@ -265,8 +293,8 @@
                     entradas. Nuestro objetivo es mejorar continuamente la
                     experiencia de nuestros usuarios.</p>
 
-                <p class="conclusion">Sabemos que nuestro museo es innovador para la cultura latinoamericana, 
-                    es por esto que intentamos apegarnos un poco al formato tradicional de la página de un museo, 
+                <p class="conclusion">Sabemos que nuestro museo es innovador para la cultura latinoamericana,
+                    es por esto que intentamos apegarnos un poco al formato tradicional de la página de un museo,
                     contando con las exposiciones, un sistema de reservas y todo lo que un visitante podría necesitar
                     saber respecto al museo antes de realizar una visita.
                     Por otra parte y en el mismo orden de ideas, se trató de que la página fuera llamativa para que,

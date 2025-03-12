@@ -35,3 +35,8 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function toggleTexto(id) {
+    let contenido = document.getElementById(id);
+    contenido.classList.toggle("activo");
+}
