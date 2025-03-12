@@ -254,27 +254,41 @@
         <section class="resume-section" id="reservas">
             <div class="resume-section-content">
                 <h2 class="mb-5">Reservas</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
+                
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Realiza tu reservas</h3>
 
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Browser Testing & Debugging
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
-                </ul>
+                        <p>Puedes realizar tu reserva con anticipación desde la comodidad de tu computador o smartphone, 
+                            a través de nuestra página web, para así evitar largas filas o falta de cupo el día que tengas planeado visitar nuestro museo. 
+                            Revisa nuestras opciones y realiza la tuya:</p>
+                    </div>
+                    <div class="descripcion-secciones">
+                        <div class="seccion">
+                            <h3>Reserva Full</h3>
+                            <p>Obtén acceso a todos las áreas y exposiciones que tiene el museo habilitadas para el público, 
+                                incluido el salón de las consolas donde podrás recordar esos juegos inolvidables. 
+                                Disfruta de la experiencia completa en nuestro museo.</p>
+
+                            <button onclick="irASeccion('exhibicion')">Reserva Aqui</button>
+                        </div>
+                    </div>
+                    <div class="descripcion-secciones">
+                        <h3>Reserva Estándar</h3>
+                        <p>Podrás disfrutar de las exposiciones en las secciones de pasadas y actuales, 
+                            donde podrás ser testigo de la historia de los videojuegos.</p>
+                        <button onclick="irASeccion('actuales')">Reserva Aqui</button>
+                    </div>
+
+                    <div class="descripcion-secciones">
+                        <h3>Reserva Evento Mensual</h3>
+                        <p>Contamos con un evento mensual donde tenemos invitados especiales, 
+                            además de realizar actividades donde podrás llevarte una experiencia inolvidable.</p>
+                        <button onclick="irASeccion('pasadas')">Reserva Aqui</button>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!-- conclusiones-->
