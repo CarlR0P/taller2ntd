@@ -42,37 +42,37 @@ function toggleTexto(id) {
 }
 
 
-    // Ocultar el formulario al cargar la página
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("formularioReserva").classList.add("hidden");
-    });
+// Ocultar el formulario al cargar la página
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("formularioReserva").classList.add("hidden");
+});
 
-    function mostrarFormulario(tipo) {
-        // Muestra el formulario
-        let formulario = document.getElementById("formularioReserva");
-        formulario.classList.remove("hidden");
+function mostrarFormulario(tipo) {
+    // Muestra el formulario
+    let formulario = document.getElementById("formularioReserva");
+    formulario.classList.remove("hidden");
 
-        // Cambia el texto para indicar el tipo de reserva
-        document.getElementById("tipoReserva").innerText = `Tipo de reserva seleccionada: ${tipo}`;
+    // Cambia el texto para indicar el tipo de reserva
+    document.getElementById("tipoReserva").innerText = `Tipo de reserva seleccionada: ${tipo}`;
 
-        // Desplaza la página hacia el formulario
-        formulario.scrollIntoView({ behavior: "smooth" });
-    }
+    // Desplaza la página hacia el formulario
+    formulario.scrollIntoView({ behavior: "smooth" });
+}
+    // Funcion para mostrar el mensaje segun el formulario
+document.getElementById("reservaForm").addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    document.getElementById("reservaForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        let nombre = document.getElementById("nombre").value;
-        let tipoDocumento = document.getElementById("tipoDocumento").value;
-        let documento = document.getElementById("documento").value;
-        let celular = document.getElementById("celular").value;
-        let correo = document.getElementById("correo").value;
-        let personas = document.getElementById("personas").value;
-        let fecha = document.getElementById("fecha").value;
-        
-        document.getElementById("mensaje").innerText = 
-            `Gracias, tu reserva para ${personas} persona(s) el ${fecha} ha sido confirmada. 
+    let nombre = document.getElementById("nombre").value;
+    let tipoDocumento = document.getElementById("tipoDocumento").value;
+    let documento = document.getElementById("documento").value;
+    let celular = document.getElementById("celular").value;
+    let correo = document.getElementById("correo").value;
+    let personas = document.getElementById("personas").value;
+    let fecha = document.getElementById("fecha").value;
+
+    document.getElementById("mensaje").innerText =
+        `Gracias, tu reserva para ${personas} persona(s) el ${fecha} ha sido confirmada. 
             Se enviará una confirmación a ${correo} y un mensaje a ${celular}.
             No olvides pagar las reservas en la entrada el respectivo dia.`;
-    });
-    
+});
+
