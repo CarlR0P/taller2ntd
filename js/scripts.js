@@ -1,4 +1,4 @@
-function enviarFalso(event){
+function enviarFalso(event) {
     event.preventDefault();
     alert("¡Tu consulta ha sido enviada con éxito! Pronto recibirás información en tu correo.");
     document.querySelector("form").reset();
@@ -40,3 +40,31 @@ function toggleTexto(id) {
     let contenido = document.getElementById(id);
     contenido.classList.toggle("activo");
 }
+
+
+    // Ocultar el formulario al cargar la página
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("formularioReserva").classList.add("hidden");
+    });
+
+    function mostrarFormulario(tipo) {
+        // Muestra el formulario
+        let formulario = document.getElementById("formularioReserva");
+        formulario.classList.remove("hidden");
+
+        // Cambia el texto para indicar el tipo de reserva
+        document.getElementById("tipoReserva").innerText = `Tipo de reserva seleccionada: ${tipo}`;
+
+        // Desplaza la página hacia el formulario
+        formulario.scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.getElementById("reservaForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let nombre = document.getElementById("nombre").value;
+        let personas = document.getElementById("personas").value;
+        let fecha = document.getElementById("fecha").value;
+        
+        document.getElementById("mensaje").innerText = 
+            `Gracias ${nombre}, tu reserva para ${personas} persona(s) el ${fecha} ha sido confirmada.`;
+    });

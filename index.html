@@ -180,7 +180,7 @@
                         <div class="texto-desplegable" id="txt2">
                             Preservar, exhibir y difundir la historia de los videojuegos, brindando una experiencia
                             inmersiva que conecte a jugadores de todas las edades con el legado y la evolución de esta
-                            forma de arte y entretenimiento. 
+                            forma de arte y entretenimiento.
                             <br>
                         </div>
                     </div>
@@ -189,17 +189,19 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt3')"><br>Nuestra Visión<br></h3>
                         <div class="texto-desplegable" id="txt3">
-                            Ser un referente en la conservación y divulgación del patrimonio cultural de los videojuegos,
+                            Ser un referente en la conservación y divulgación del patrimonio cultural de los
+                            videojuegos,
                             inspirando a nuevas generaciones a explorar su impacto en la sociedad, la tecnología y el
                             arte.
                             <br>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between alinear-derecha">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt4')"><br>Impacto a la Comunidad<br></h3>
+                        <h3 class="mb-0 titulo-quienesomos" onclick="toggleTexto('txt4')"><br>Impacto a la Comunidad<br>
+                        </h3>
                         <div class="texto-desplegable" id="txt4">
                             Nuestro museo no solo preserva la historia de los videojuegos, sino que también fomenta la
                             educación, la creatividad y la innovación. A través de exposiciones interactivas, talleres y
@@ -219,18 +221,19 @@
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0 titulo-quienesomos" style="text-align: center;" onclick="toggleTexto('txt6')"><br>Reciba más información<br></h3>
+                        <h3 class="mb-0 titulo-quienesomos" style="text-align: center;" onclick="toggleTexto('txt6')">
+                            <br>Reciba más información<br></h3>
                         <div class="texto-desplegable" id="txt6">
                             <form class="formulario-contacto" onsubmit="enviarFalso(event)">
                                 <label for="nombre">Nombre completo:</label>
                                 <input type="text" id="nombre" name="nombre" required>
-    
+
                                 <label for="email">Correo electrónico:</label>
                                 <input type="email" id="email" name="email" required>
-    
+
                                 <label for="telefono">Celular:</label>
                                 <input type="tel" id="telefono" name="telefono" required>
-    
+
                                 <label for="asunto">¿Qué información le resulta relevante?</label>
                                 <select id="asunto" name="asunto">
                                     <option value="eventos">Eventos</option>
@@ -238,10 +241,10 @@
                                     <option value="membresia">Membresía</option>
                                     <option value="otro">Otro</option>
                                 </select>
-    
+
                                 <label for="consentimiento">Acepto recibir información del museo.</label>
                                 <input type="checkbox" id="consentimiento" required>
-    
+
                                 <button type="submit">Enviar</button>
                             </form>
                         </div>
@@ -250,47 +253,59 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="reservas">
+        <!-- Reservas-->
+        <section class="resume-section" id="reservas"> 
             <div class="resume-section-content">
                 <h2 class="mb-5">Reservas</h2>
-                
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Realiza tu reservas</h3>
-
-                        <p>Puedes realizar tu reserva con anticipación desde la comodidad de tu computador o smartphone, 
-                            a través de nuestra página web, para así evitar largas filas o falta de cupo el día que tengas planeado visitar nuestro museo. 
-                            Revisa nuestras opciones y realiza la tuya:</p>
-                    </div>
+        
+                <!-- Texto de introducción -->
+                <div class="flex-grow-1 mb-4">
+                    <h3 class="mb-0">Realiza tu reserva</h3>
+                    <p>Puedes realizar tu reserva con anticipación desde la comodidad de tu computador o smartphone, 
+                        a través de nuestra página web, para así evitar largas filas o falta de cupo el día que tengas planeado visitar nuestro museo. 
+                        Revisa nuestras opciones y realiza la tuya:</p>
+                </div>
+        
+                <!-- Opciones de reserva -->
+                <div class="d-flex flex-wrap justify-content-center gap-4">
                     <div class="descripcion-secciones">
-                        <div class="seccion">
-                            <h3>Reserva Full</h3>
-                            <p>Obtén acceso a todos las áreas y exposiciones que tiene el museo habilitadas para el público, 
-                                incluido el salón de las consolas donde podrás recordar esos juegos inolvidables. 
-                                Disfruta de la experiencia completa en nuestro museo.</p>
-
-                            <button onclick="irASeccion('exhibicion')">Reserva Aqui</button>
-                        </div>
+                        <h3>Reserva Full</h3>
+                        <p>Obtén acceso a todas las áreas y exposiciones que tiene el museo habilitadas para el público, 
+                            incluido el salón de las consolas donde podrás recordar esos juegos inolvidables. 
+                            Disfruta de la experiencia completa en nuestro museo.</p>
+                        <button onclick="mostrarFormulario('Reserva Full')">Reserva Aquí</button>
                     </div>
+        
                     <div class="descripcion-secciones">
                         <h3>Reserva Estándar</h3>
                         <p>Podrás disfrutar de las exposiciones en las secciones de pasadas y actuales, 
                             donde podrás ser testigo de la historia de los videojuegos.</p>
-                        <button onclick="irASeccion('actuales')">Reserva Aqui</button>
+                        <button onclick="mostrarFormulario('Reserva Estándar')">Reserva Aquí</button>
                     </div>
-
+        
                     <div class="descripcion-secciones">
                         <h3>Reserva Evento Mensual</h3>
                         <p>Contamos con un evento mensual donde tenemos invitados especiales, 
                             además de realizar actividades donde podrás llevarte una experiencia inolvidable.</p>
-                        <button onclick="irASeccion('pasadas')">Reserva Aqui</button>
+                        <button onclick="mostrarFormulario('Reserva Evento Mensual')">Reserva Aquí</button>
                     </div>
-
                 </div>
-
+        
+                <!-- Formulario de reserva oculto -->
+                <div id="formularioReserva" class="container hidden mt-5">
+                    <h2>Reserva tu visita</h2>
+                    <p id="tipoReserva"></p>
+                    <form id="reservaForm">
+                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                        <input type="number" id="personas" placeholder="Número de personas" required>
+                        <input type="date" id="fecha" required>
+                        <button type="submit">Reservar</button>
+                    </form>
+                    <p id="mensaje"></p>
+                </div>
             </div>
         </section>
+
         <!-- conclusiones-->
         <section class="resume-section" id="conclusion">
             <div class="resume-section-content">
