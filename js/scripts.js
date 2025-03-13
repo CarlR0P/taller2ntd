@@ -61,10 +61,18 @@ function toggleTexto(id) {
 
     document.getElementById("reservaForm").addEventListener("submit", function(event) {
         event.preventDefault();
+        
         let nombre = document.getElementById("nombre").value;
+        let tipoDocumento = document.getElementById("tipoDocumento").value;
+        let documento = document.getElementById("documento").value;
+        let celular = document.getElementById("celular").value;
+        let correo = document.getElementById("correo").value;
         let personas = document.getElementById("personas").value;
         let fecha = document.getElementById("fecha").value;
         
         document.getElementById("mensaje").innerText = 
-            `Gracias ${nombre}, tu reserva para ${personas} persona(s) el ${fecha} ha sido confirmada.`;
+            `Gracias, tu reserva para ${personas} persona(s) el ${fecha} ha sido confirmada. 
+            Se enviará una confirmación a ${correo} y un mensaje a ${celular}.
+            No olvides pagar las reservas en la entrada el respectivo dia.`;
     });
+    

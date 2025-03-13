@@ -222,7 +222,8 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
                         <h3 class="mb-0 titulo-quienesomos" style="text-align: center;" onclick="toggleTexto('txt6')">
-                            <br>Reciba más información<br></h3>
+                            <br>Reciba más información<br>
+                        </h3>
                         <div class="texto-desplegable" id="txt6">
                             <form class="formulario-contacto" onsubmit="enviarFalso(event)">
                                 <label for="nombre">Nombre completo:</label>
@@ -254,51 +255,63 @@
         </section>
         <hr class="m-0" />
         <!-- Reservas-->
-        <section class="resume-section" id="reservas"> 
+        <section class="resume-section" id="reservas">
             <div class="resume-section-content">
                 <h2 class="mb-5">Reservas</h2>
-        
+
                 <!-- Texto de introducción -->
                 <div class="flex-grow-1 mb-4">
                     <h3 class="mb-0">Realiza tu reserva</h3>
-                    <p>Puedes realizar tu reserva con anticipación desde la comodidad de tu computador o smartphone, 
-                        a través de nuestra página web, para así evitar largas filas o falta de cupo el día que tengas planeado visitar nuestro museo. 
+                    <p>Puedes realizar tu reserva con anticipación desde la comodidad de tu computador o smartphone,
+                        a través de nuestra página web, para así evitar largas filas o falta de cupo el día que tengas
+                        planeado visitar nuestro museo.
                         Revisa nuestras opciones y realiza la tuya:</p>
                 </div>
-        
+
                 <!-- Opciones de reserva -->
                 <div class="d-flex flex-wrap justify-content-center gap-4">
                     <div class="descripcion-secciones">
                         <h3>Reserva Full</h3>
-                        <p>Obtén acceso a todas las áreas y exposiciones que tiene el museo habilitadas para el público, 
-                            incluido el salón de las consolas donde podrás recordar esos juegos inolvidables. 
+                        <p>Obtén acceso a todas las áreas y exposiciones que tiene el museo habilitadas para el público,
+                            incluido el salón de las consolas donde podrás recordar esos juegos inolvidables.
                             Disfruta de la experiencia completa en nuestro museo.</p>
                         <button onclick="mostrarFormulario('Reserva Full')">Reserva Aquí</button>
                     </div>
-        
+
                     <div class="descripcion-secciones">
                         <h3>Reserva Estándar</h3>
-                        <p>Podrás disfrutar de las exposiciones en las secciones de pasadas y actuales, 
+                        <p>Podrás disfrutar de las exposiciones en las secciones de pasadas y actuales,
                             donde podrás ser testigo de la historia de los videojuegos.</p>
                         <button onclick="mostrarFormulario('Reserva Estándar')">Reserva Aquí</button>
                     </div>
-        
+
                     <div class="descripcion-secciones">
                         <h3>Reserva Evento Mensual</h3>
-                        <p>Contamos con un evento mensual donde tenemos invitados especiales, 
+                        <p>Contamos con un evento mensual donde tenemos invitados especiales,
                             además de realizar actividades donde podrás llevarte una experiencia inolvidable.</p>
                         <button onclick="mostrarFormulario('Reserva Evento Mensual')">Reserva Aquí</button>
                     </div>
                 </div>
-        
+
                 <!-- Formulario de reserva oculto -->
                 <div id="formularioReserva" class="container hidden mt-5">
                     <h2>Reserva tu visita</h2>
                     <p id="tipoReserva"></p>
                     <form id="reservaForm">
-                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        <select id="tipoDocumento" required>
+                            <option value="" disabled selected>Tipo de documento</option>
+                            <option value="CC">Cédula de ciudadanía</option>
+                            <option value="TI">Tarjeta de identidad</option>
+                            <option value="CE">Cédula de extranjería</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                        <input type="text" id="documento" placeholder="Número de documento" required>
+                        <input type="tel" id="celular" placeholder="Número de celular" required>
+                        <input type="email" id="correo" placeholder="Correo electrónico" required>
                         <input type="number" id="personas" placeholder="Número de personas" required>
                         <input type="date" id="fecha" required>
+
                         <button type="submit">Reservar</button>
                     </form>
                     <p id="mensaje"></p>
